@@ -1,290 +1,602 @@
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head><script>(function(w,i,g){w[g]=w[g]||[];if(typeof w[g].push=='function')w[g].push(i)})
-(window,'GTM-W8LLXKQW','google_tags_first_party');</script><script>(function(w,d,s,l){w[l]=w[l]||[];(function(){w[l].push(arguments);})('set', 'developer_id.dYzg1YT', true);
-		w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s);j.async=true;j.src='/9dn2/';
-		f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer');</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Chatflow: chatbot que faz triagem e envia pro WhatsApp | 7 dias grátis</title>
-<meta name="description" content="O Chatflow cria o link, faz a triagem dos contatos e envia o cliente pro seu WhatsApp. 7 dias grátis, depois R$ 49,90 por mês.">
-<meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#0B5FFF">
-<meta name="author" content="Chatflow">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="pt_BR">
-<meta property="og:site_name" content="Chatflow">
-<meta property="og:title" content="Chatflow: pare de responder as mesmas perguntas no WhatsApp">
-<meta property="og:description" content="Crie seu chatbot conversando com uma IA. Ele faz a triagem e envia o cliente pro seu WhatsApp. 7 dias grátis.">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chatflow: 7 dias grátis">
-<meta name="twitter:description" content="Chatbot que faz a triagem e envia o cliente pro seu WhatsApp. Depois, R$ 49,90 por mês.">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Chatflow","applicationCategory":"BusinessApplication","operatingSystem":"Web","inLanguage":"pt-BR","description":"Sistema de automação de chatbot que cria o link, faz a triagem dos contatos e envia o cliente para o WhatsApp.","offers":{"@type":"Offer","price":"49.90","priceCurrency":"BRL","description":"7 dias grátis, depois R$ 49,90 por mês."}}
-</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#FFFFFF;--surface:#FFFFFF;--ink:#0B1533;--muted:#4A5578;--line:#D9E2F7;
-  --blue:#0B5FFF;--navy:#0A1B4D;--green:#6BF25F;--on-green:#0B1533;--bubble:#E8EEFC;
-  --display:"Bricolage Grotesque","Trebuchet MS",sans-serif;--body:"Figtree",system-ui,sans-serif;
-  color-scheme:light;
-  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+  <head><script>(function(w,i,g){w[g]=w[g]||[];if(typeof w[g].push=='function')w[g].push(i)})
+  (window,'GTM-W8LLXKQW','google_tags_first_party');</script><script>(function(w,d,s,l){w[l]=w[l]||[];(function(){w[l].push(arguments);})('set', 'developer_id.dYzg1YT', true);
+      w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s);j.async=true;j.src='/9dn2/';
+      f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Chatflow: chatbot que faz triagem e envia pro WhatsApp | 7 dias grátis</title>
+  <meta name="description" content="O Chatflow cria o link, faz a triagem dos contatos e envia o cliente pro seu WhatsApp. 7 dias grátis, depois R$ 49,90 por mês.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0B5FFF">
+  <meta name="author" content="Chatflow">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Chatflow">
+  <meta property="og:title" content="Chatflow: pare de responder as mesmas perguntas no WhatsApp">
+  <meta property="og:description" content="Crie seu chatbot conversando com uma IA. Ele faz a triagem e envia o cliente pro seu WhatsApp. 7 dias grátis.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Chatflow: 7 dias grátis">
+  <meta name="twitter:description" content="Chatbot que faz a triagem e envia o cliente pro seu WhatsApp. Depois, R$ 49,90 por mês.">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Chatflow","applicationCategory":"BusinessApplication","operatingSystem":"Web","inLanguage":"pt-BR","description":"Sistema de automação de chatbot que cria o link, faz a triagem dos contatos e envia o cliente para o WhatsApp.","offers":{"@type":"Offer","price":"49.90","priceCurrency":"BRL","description":"7 dias grátis, depois R$ 49,90 por mês."}}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+  :root{
+    --bg:#FFFFFF;--surface:#FFFFFF;--ink:#0B1533;--muted:#4A5578;--line:#D9E2F7;
+    --blue:#0B5FFF;--navy:#0A1B4D;--green:#6BF25F;--on-green:#0B1533;--bubble:#E8EEFC;
+    --display:"Bricolage Grotesque","Trebuchet MS",sans-serif;--body:"Figtree",system-ui,sans-serif;
+    color-scheme:light;
+    box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+  body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body)}
+  h1,h2,h3{font-family:var(--display);line-height:1.08;margin:0;letter-spacing:-.02em}
+  h1{font-size:clamp(2.4rem,8vw,4.4rem);font-weight:800}
+  h2{font-size:clamp(1.8rem,5vw,2.8rem);font-weight:800}
+  h3{font-size:1.25rem;font-weight:600}
+  p{margin:0 0 1em;max-width:62ch}
+  a{color:inherit}
+  :focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+  .wrap{width:min(1100px,100% - 40px);margin-inline:auto}
+  section{padding:72px 0}
+  .btn{display:inline-block;background:var(--green);color:var(--on-green);font:700 1.1rem var(--body);padding:16px 28px;border-radius:999px;text-decoration:none;transition:transform .15s,box-shadow .15s;box-shadow:0 6px 0 rgba(10,27,77,.18)}
+  .btn:hover{transform:translateY(-2px)}
+  .btn:active{transform:translateY(3px);box-shadow:0 2px 0 rgba(10,27,77,.18)}
+  .micro{font-size:.9rem;color:var(--muted);margin:14px 0 0}
+  header.top{padding:18px 0}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .logo{display:flex;align-items:center;gap:10px;font:800 1.5rem var(--display);text-decoration:none}
+  .logo svg{width:38px;height:38px}
+  .nav-cta{font-weight:700;text-decoration:none;color:var(--blue);padding:8px 4px}
+
+  /* HERO */
+  .hero{padding:32px 0 80px}
+  .hero .wrap{display:grid;gap:44px;align-items:center}
+  .hero p.lead{font-size:1.25rem;color:var(--muted);margin:22px 0 28px}
+  .tag{display:inline-block;background:var(--navy);color:var(--green);font-weight:700;padding:6px 14px;border-radius:999px;margin-bottom:20px;font-size:.95rem}
+  @media(min-width:900px){.hero .wrap{grid-template-columns:1.15fr .85fr}}
+
+ /* PHONE / CHAT MOCKUP (COMPACTO E RESPONSIVO) */
+.phone-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body)}
-h1,h2,h3{font-family:var(--display);line-height:1.08;margin:0;letter-spacing:-.02em}
-h1{font-size:clamp(2.4rem,8vw,4.4rem);font-weight:800}
-h2{font-size:clamp(1.8rem,5vw,2.8rem);font-weight:800}
-h3{font-size:1.25rem;font-weight:600}
-p{margin:0 0 1em;max-width:62ch}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
-.wrap{width:min(1100px,100% - 40px);margin-inline:auto}
-section{padding:72px 0}
-.btn{display:inline-block;background:var(--green);color:var(--on-green);font:700 1.1rem var(--body);padding:16px 28px;border-radius:999px;text-decoration:none;transition:transform .15s,box-shadow .15s;box-shadow:0 6px 0 rgba(10,27,77,.18)}
-.btn:hover{transform:translateY(-2px)}
-.btn:active{transform:translateY(3px);box-shadow:0 2px 0 rgba(10,27,77,.18)}
-.micro{font-size:.9rem;color:var(--muted);margin:14px 0 0}
-header.top{padding:18px 0}
-header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px}
-.logo{display:flex;align-items:center;gap:10px;font:800 1.5rem var(--display);text-decoration:none}
-.logo svg{width:38px;height:38px}
-.nav-cta{font-weight:700;text-decoration:none;color:var(--blue);padding:8px 4px}
+.phone-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 8% 12%;
+  background: radial-gradient(circle, rgba(11, 95, 255, 0.2) 0%, rgba(107, 242, 95, 0.12) 55%, transparent 75%);
+  filter: blur(22px);
+  z-index: 0;
+  pointer-events: none;
+}
 
-/* HERO */
-.hero{padding:32px 0 80px}
-.hero .wrap{display:grid;gap:44px;align-items:center}
-.hero p.lead{font-size:1.25rem;color:var(--muted);margin:22px 0 28px}
-.tag{display:inline-block;background:var(--navy);color:var(--green);font-weight:700;padding:6px 14px;border-radius:999px;margin-bottom:20px;font-size:.95rem}
-@media(min-width:900px){.hero .wrap{grid-template-columns:1.15fr .85fr}}
+.phone {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 300px); /* Reduzido de 356px para 300px */
+  background: linear-gradient(145deg, #1e293b 0%, #090d16 100%);
+  border-radius: 38px;
+  padding: 9px;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.14) inset,
+    0 0 0 2px #0f172a,
+    0 24px 48px -14px rgba(10, 27, 77, 0.38);
+}
 
-/* PHONE / CHAT */
-.phone{background:var(--blue);border-radius:44px;padding:14px;max-width:360px;width:100%;margin-inline:auto;box-shadow:0 30px 60px -20px rgba(11,95,255,.55)}
-.screen{background:var(--surface);border-radius:32px;min-height:440px;padding:16px;display:flex;flex-direction:column;gap:10px}
-.screen header{display:flex;align-items:center;gap:10px;padding-bottom:12px;border-bottom:1px solid var(--line);font-weight:700}
-.screen header small{display:block;font-weight:400;color:var(--muted);font-size:.8rem}
-.dot{width:10px;height:10px;background:var(--green);border-radius:50%;display:inline-block;margin-right:6px}
-.msg{max-width:82%;padding:10px 14px;border-radius:18px;font-size:.96rem;line-height:1.4;opacity:0;transform:translateY(8px);transition:opacity .35s,transform .35s}
-.msg.show{opacity:1;transform:none}
-.msg.bot{background:var(--bubble);border-bottom-left-radius:4px}
-.msg.me{background:var(--blue);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{border:2px solid var(--blue);border-radius:999px;padding:5px 12px;font-size:.88rem;font-weight:600;color:var(--blue)}
-.wa{background:var(--green);color:var(--on-green);font-weight:700}
-@media (prefers-reduced-motion:reduce){.msg{transition:none;opacity:1;transform:none}}
+/* Botões físicos laterais proporcionais */
+.phone::before,
+.phone::after {
+  content: "";
+  position: absolute;
+  background: #1e293b;
+  border-radius: 2px;
+}
+.phone::before {
+  left: -2.5px;
+  top: 86px;
+  width: 2.5px;
+  height: 28px;
+  box-shadow: 0 38px 0 #1e293b;
+}
+.phone::after {
+  right: -2.5px;
+  top: 106px;
+  width: 2.5px;
+  height: 42px;
+}
 
-/* PAIN */
-.pain{background:var(--bg);border-top:2px solid var(--line)}
-.pain li{color:var(--muted)}
-.pain h2{margin-bottom:28px}
-.pain ul{list-style:none;padding:0;margin:0;display:grid;gap:14px;max-width:700px}
-.pain li{padding-left:34px;position:relative;font-size:1.1rem}
-.pain li::before{content:"”";position:absolute;left:0;top:-6px;font:800 2.4rem var(--display);color:var(--blue)}
+.screen {
+  background: #f6f8fd;
+  border-radius: 30px;
+  min-height: 400px; /* Reduzido de 500px para 400px */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(11, 21, 51, 0.08);
+}
 
-/* STEPS: a conversa vira o layout */
-.steps{display:grid;gap:18px;margin-top:36px}
-.step{background:var(--surface);border:2px solid var(--line);padding:24px;border-radius:26px 26px 26px 6px}
-.step:nth-child(2){border-radius:26px 26px 6px 26px;margin-left:clamp(0px,6vw,60px)}
-.step:nth-child(3){background:var(--green);border-color:var(--green);color:var(--on-green)}
-.step:nth-child(3) p{color:var(--on-green)}
-.step p{margin:8px 0 0;color:var(--muted)}
-@media(min-width:900px){.steps{grid-template-columns:repeat(3,1fr);align-items:start}.step:nth-child(2){margin:40px 0 0}}
+/* Status bar + Dynamic Island compactos */
+.statusbar {
+  background: var(--surface);
+  padding: 8px 18px 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+.island {
+  width: 68px;
+  height: 18px;
+  background: #090d16;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 6px;
+}
+.island::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #3b82f6, #0f172a 70%);
+}
+.status-icons {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transform: scale(0.88);
+}
 
-/* BENEFITS */
-.benefits ul{list-style:none;padding:0;margin:32px 0 0;display:grid;gap:0;border-top:2px solid var(--line)}
-.benefits li{padding:20px 0;border-bottom:2px solid var(--line);display:grid;gap:4px}
-.benefits li strong{font:600 1.2rem var(--display)}
-.benefits li span{color:var(--muted)}
-@media(min-width:760px){.benefits li{grid-template-columns:1fr 1.4fr;gap:24px}}
+/* Cabeçalho do Chat */
+.screen header {
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px 9px;
+  border-bottom: 1px solid var(--line);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+.screen header .avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: #eef4ff;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+.screen header .avatar svg {
+  width: 19px;
+  height: 19px;
+}
+.screen header small {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #15803d;
+  font-size: 0.68rem;
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  background: #22c55e;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 4px;
+}
 
-/* OFFER */
-.offer .card{background:var(--blue);color:#fff;border-radius:36px;padding:clamp(28px,6vw,56px);display:grid;gap:32px}
-@media(min-width:860px){.offer .card{grid-template-columns:1fr 1fr;align-items:center}}
-.price-big{font:800 clamp(3.4rem,12vw,5.6rem)/1 var(--display);color:var(--green)}
-.price-big small{display:block;font:600 1.2rem var(--body);color:#fff;margin-top:8px}
-.offer ul{list-style:none;padding:0;margin:0 0 24px;display:grid;gap:10px}
-.offer li::before{content:"✓";font-weight:800;color:var(--green);margin-right:10px}
-.offer .btn{box-shadow:0 6px 0 rgba(0,0,0,.25)}
-.offer .micro{color:#DCE6FF}
+/* Área de mensagens */
+.chat-body {
+  flex: 1;
+  padding: 10px 11px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  background-image: radial-gradient(#d9e2f7 0.75px, transparent 0.75px);
+  background-size: 12px 12px;
+}
+.chat-day {
+  align-self: center;
+  font-size: 0.64rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--line);
+  padding: 1px 8px;
+  border-radius: 999px;
+}
 
-/* FAQ */
-details{border-bottom:2px solid var(--line);padding:18px 0}
-summary{cursor:pointer;font:600 1.15rem var(--display);list-style:none;display:flex;justify-content:space-between;gap:16px}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"+";font-size:1.6rem;line-height:1;color:var(--blue);transition:transform .2s}
-details[open] summary::after{transform:rotate(45deg)}
-details p{margin:12px 0 0;color:var(--muted)}
+.msg {
+  max-width: 86%;
+  padding: 8px 11px 6px;
+  border-radius: 15px;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  box-shadow: 0 1px 4px rgba(11, 21, 51, 0.05);
+}
+.msg.show {
+  opacity: 1;
+  transform: none;
+}
+.msg.bot {
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-bottom-left-radius: 4px;
+  align-self: flex-start;
+}
+.msg.me {
+  background: linear-gradient(135deg, #0b5fff 0%, #0047cc 100%);
+  color: #fff;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+.msg-meta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3px;
+  font-size: 0.6rem;
+  margin-top: 2px;
+  opacity: 0.65;
+}
 
-/* FINAL */
-.final{text-align:center}
-.final .wrap{display:grid;justify-items:center}
-.final p{margin-inline:auto}
-.ps{border-top:2px solid var(--line);padding:32px 0 56px;color:var(--muted);font-size:1rem}
-.ps strong{color:var(--ink)}
-footer.legal{font-size:.8rem;color:var(--muted);padding-bottom:32px}
-</style>
-</head>
-<body>
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 7px;
+}
+.chip {
+  background: #f0f5ff;
+  border: 1px solid rgba(11, 95, 255, 0.35);
+  border-radius: 999px;
+  padding: 3px 9px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+.chip.selected {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
+}
 
-<header class="top">
-  <div class="wrap">
-    <a class="logo" href="#" aria-label="Chatflow">
-      <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="#0B5FFF" d="M14 6h36a10 10 0 0 1 10 10v24a10 10 0 0 1-10 10H28L16 60l2-10.4A10 10 0 0 1 4 40V16A10 10 0 0 1 14 6z"/><circle cx="23" cy="25" r="4" fill="#fff"/><circle cx="41" cy="25" r="4" fill="#fff"/><path d="M22 35c6 6 14 6 20 0" stroke="#fff" stroke-width="4.5" stroke-linecap="round" fill="none"/></svg>
-      Chatflow
-    </a>
-    <a class="nav-cta" href="#oferta">Começar grátis</a>
+.msg.wa {
+  background: linear-gradient(135deg, #6bf25f 0%, #4ade80 100%);
+  border-color: transparent;
+  color: var(--on-green);
+  font-weight: 700;
+}
+
+/* Rodapé simulado + Home Indicator */
+.chat-footer {
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  padding: 7px 10px 5px;
+}
+.input-bar {
+  background: #f1f5fb;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 6px 4px 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+.send-btn {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+.home-bar {
+  width: 88px;
+  height: 3.5px;
+  background: rgba(11, 21, 51, 0.22);
+  border-radius: 999px;
+  margin: 6px auto 1px;
+}
+
+/* Ajuste extra para telas muito estreitas (< 360px) */
+@media (max-width: 360px) {
+  .phone {
+    border-radius: 32px;
+    padding: 7px;
+  }
+  .screen {
+    border-radius: 25px;
+    min-height: 370px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .msg { transition: none; opacity: 1; transform: none; }
+}
+  /* PAIN */
+  .pain{background:var(--bg);border-top:2px solid var(--line)}
+  .pain li{color:var(--muted)}
+  .pain h2{margin-bottom:28px}
+  .pain ul{list-style:none;padding:0;margin:0;display:grid;gap:14px;max-width:700px}
+  .pain li{padding-left:34px;position:relative;font-size:1.1rem}
+  .pain li::before{content:"”";position:absolute;left:0;top:-6px;font:800 2.4rem var(--display);color:var(--blue)}
+
+  /* STEPS: a conversa vira o layout */
+  .steps{display:grid;gap:18px;margin-top:36px}
+  .step{background:var(--surface);border:2px solid var(--line);padding:24px;border-radius:26px 26px 26px 6px}
+  .step:nth-child(2){border-radius:26px 26px 6px 26px;margin-left:clamp(0px,6vw,60px)}
+  .step:nth-child(3){background:var(--green);border-color:var(--green);color:var(--on-green)}
+  .step:nth-child(3) p{color:var(--on-green)}
+  .step p{margin:8px 0 0;color:var(--muted)}
+  @media(min-width:900px){.steps{grid-template-columns:repeat(3,1fr);align-items:start}.step:nth-child(2){margin:40px 0 0}}
+
+  /* BENEFITS */
+  .benefits ul{list-style:none;padding:0;margin:32px 0 0;display:grid;gap:0;border-top:2px solid var(--line)}
+  .benefits li{padding:20px 0;border-bottom:2px solid var(--line);display:grid;gap:4px}
+  .benefits li strong{font:600 1.2rem var(--display)}
+  .benefits li span{color:var(--muted)}
+  @media(min-width:760px){.benefits li{grid-template-columns:1fr 1.4fr;gap:24px}}
+
+  /* OFFER */
+  .offer .card{background:var(--blue);color:#fff;border-radius:36px;padding:clamp(28px,6vw,56px);display:grid;gap:32px}
+  @media(min-width:860px){.offer .card{grid-template-columns:1fr 1fr;align-items:center}}
+  .price-big{font:800 clamp(3.4rem,12vw,5.6rem)/1 var(--display);color:var(--green)}
+  .price-big small{display:block;font:600 1.2rem var(--body);color:#fff;margin-top:8px}
+  .offer ul{list-style:none;padding:0;margin:0 0 24px;display:grid;gap:10px}
+  .offer li::before{content:"✓";font-weight:800;color:var(--green);margin-right:10px}
+  .offer .btn{box-shadow:0 6px 0 rgba(0,0,0,.25)}
+  .offer .micro{color:#DCE6FF}
+
+  /* FAQ */
+  details{border-bottom:2px solid var(--line);padding:18px 0}
+  summary{cursor:pointer;font:600 1.15rem var(--display);list-style:none;display:flex;justify-content:space-between;gap:16px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:1.6rem;line-height:1;color:var(--blue);transition:transform .2s}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{margin:12px 0 0;color:var(--muted)}
+
+  /* FINAL */
+  .final{text-align:center}
+  .final .wrap{display:grid;justify-items:center}
+  .final p{margin-inline:auto}
+  .ps{border-top:2px solid var(--line);padding:32px 0 56px;color:var(--muted);font-size:1rem}
+  .ps strong{color:var(--ink)}
+  footer.legal{font-size:.8rem;color:var(--muted);padding-bottom:32px}
+  </style>
+  </head>
+  <body>
+
+  <header class="top">
+    <div class="wrap">
+      <a class="logo" href="#" aria-label="Chatflow">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path fill="#0B5FFF" d="M14 6h36a10 10 0 0 1 10 10v24a10 10 0 0 1-10 10H28L16 60l2-10.4A10 10 0 0 1 4 40V16A10 10 0 0 1 14 6z"/><circle cx="23" cy="25" r="4" fill="#fff"/><circle cx="41" cy="25" r="4" fill="#fff"/><path d="M22 35c6 6 14 6 20 0" stroke="#fff" stroke-width="4.5" stroke-linecap="round" fill="none"/></svg>
+        Chatflow
+      </a>
+      <a class="nav-cta" href="#oferta">Começar grátis</a>
+    </div>
+  </header>
+
+  <main>
+  <!-- 1-4. HEADLINE, SUBHEADLINE, ABERTURA, CTA -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="tag">7 dias grátis</span>
+        <h1>Receba apenas clientes prontos para comprar no seu WhatsApp</h1>
+        <p class="lead">
+          Crie um fluxo de triagem inteligente, filtre curiosos automaticamente e entregue pedidos organizados direto no seu atendimento — 24 horas por dia.</p>
+        <a class="btn" href="#oferta">Comece agora</a>
+        <p class="micro">7 dias grátis. Depois, R$ 49,90 por mês.</p>
+      </div>
+      <div class="phone-wrap">
+  <div class="phone" aria-label="Exemplo de conversa com o Chatflow">
+    <div class="screen">
+      <div class="statusbar" aria-hidden="true">
+        <span>9:41</span>
+        <div class="island"></div>
+        <div class="status-icons">
+          <svg width="14" height="10" viewBox="0 0 16 12" fill="currentColor"><rect x="0" y="7" width="3" height="5" rx="1"/><rect x="4.3" y="5" width="3" height="7" rx="1"/><rect x="8.6" y="2.5" width="3" height="9.5" rx="1"/><rect x="13" y="0" width="3" height="12" rx="1"/></svg>
+          <svg width="18" height="10" viewBox="0 0 22 12" fill="none"><rect x="0.75" y="0.75" width="18.5" height="10.5" rx="2.5" stroke="currentColor" stroke-width="1.5"/><rect x="2.5" y="2.5" width="14" height="7" rx="1.2" fill="currentColor"/><path d="M21 4v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+
+      <header>
+        <div class="avatar">
+          <svg width="24" height="24" viewBox="0 0 64 64" aria-hidden="true"><path fill="#0B5FFF" d="M14 6h36a10 10 0 0 1 10 10v24a10 10 0 0 1-10 10H28L16 60l2-10.4A10 10 0 0 1 4 40V16A10 10 0 0 1 14 6z"/><circle cx="23" cy="25" r="4" fill="#fff"/><circle cx="41" cy="25" r="4" fill="#fff"/><path d="M22 35c6 6 14 6 20 0" stroke="#fff" stroke-width="4.5" stroke-linecap="round" fill="none"/></svg>
+        </div>
+        <div>
+          Chatflow • Triagem
+          <small><span class="dot"></span>Online agora</small>
+        </div>
+      </header>
+
+      <div class="chat-body">
+        <span class="chat-day">Hoje</span>
+
+        <div class="msg bot">
+          Olá! 👋 Como posso ajudar você hoje?
+          <span class="msg-meta">09:41</span>
+        </div>
+
+        <div class="msg me">
+          Quero saber mais sobre o serviço.
+          <span class="msg-meta">09:41 ✓✓</span>
+        </div>
+
+        <div class="msg bot">
+          Ótimo! Qual é o seu interesse?
+          <div class="chips">
+            <span class="chip selected">Orçamento</span>
+            <span class="chip">Dúvidas</span>
+            <span class="chip">Agendar</span>
+          </div>
+          <span class="msg-meta">09:41</span>
+        </div>
+
+        <div class="msg me">
+          Orçamento
+          <span class="msg-meta">09:42 ✓✓</span>
+        </div>
+
+        <div class="msg bot wa">
+          Perfeito! Te levando pro WhatsApp agora… ↗
+          <span class="msg-meta">09:42</span>
+        </div>
+      </div>
+
+      <div class="chat-footer" aria-hidden="true">
+        <div class="input-bar">
+          <span>Escolha uma opção acima…</span>
+          <div class="send-btn">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </div>
+        </div>
+        <div class="home-bar"></div>
+      </div>
+    </div>
   </div>
-</header>
+</div>
+      </div>
+    </div>
+  </section>
 
-<main>
-<!-- 1-4. HEADLINE, SUBHEADLINE, ABERTURA, CTA -->
-<section class="hero">
-  <div class="wrap">
-    <div>
-      <span class="tag">7 dias grátis</span>
-      <h1>Receba apenas clientes prontos para comprar no seu WhatsApp</h1>
-      <p class="lead">
-        Crie um fluxo de triagem inteligente, filtre curiosos automaticamente e entregue pedidos organizados direto no seu atendimento — 24 horas por dia.</p>
-      <a class="btn" href="#oferta">Comece agora</a>
+  <!-- 5. DOR -->
+  <section class="pain">
+    <div class="wrap">
+      <h2>Você já passou por isso?</h2>
+      <ul>
+        <li>Abriu o WhatsApp e tinha uma fila de “quanto custa?”.</li>
+        <li>Respondeu a mesma pergunta pela quinta vez no dia.</li>
+        <li>Demorou pra responder e o cliente sumiu.</li>
+        <li>Perdeu tempo com quem só estava curioso.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6. SOLUÇÃO -->
+  <section>
+    <div class="wrap">
+      <h2>Um link. Uma conversa. Um cliente pronto.</h2>
+      <p style="margin-top:16px;color:var(--muted)">O Chatflow conversa primeiro. Você só entra quando o cliente já disse o que quer.</p>
+      <div class="steps">
+        <div class="step"><h3>Você cria o fluxo conversando</h3><p>Copie nosso prompt, cole em qualquer IA e converse normalmente. Ela devolve um JSON. Cole na configuração e pronto: seu link está no ar.</p></div>
+        <div class="step"><h3>O chatbot faz a triagem</h3><p>Ele pergunta o que o cliente precisa e organiza as respostas.</p></div>
+        <div class="step"><h3>O cliente cai no WhatsApp</h3><p>Você recebe a conversa já com contexto. Sem repetir pergunta.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. BENEFÍCIOS -->
+  <section class="benefits">
+    <div class="wrap">
+      <h2>O que muda no seu dia</h2>
+      <ul>
+        <li><strong>Menos mensagem repetida</strong><span>O chatbot responde o básico pra você focar no que importa.</span></li>
+        <li><strong>Atendimento sem espera</strong><span>O cliente começa a ser atendido na hora, a qualquer horário.</span></li>
+        <li><strong>Conversa com contexto</strong><span>Você já sabe o que a pessoa quer antes de dizer “oi”.</span></li>
+        <li><strong>Fluxo criado por conversa</strong><span>Nada de programar. Você conversa com uma IA e ela monta o fluxo pra você.</span></li>
+        <li><strong>Um link pra tudo</strong><span>Coloque na bio, no site, no anúncio ou no cartão.</span></li>
+        <li><strong>Começo sem risco</strong><span>Teste 7 dias grátis e veja funcionando no seu negócio.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EXEMPLO -->
+  <section style="padding-top:0">
+    <div class="wrap" style="max-width:780px">
+      <h2>Veja pelos olhos do seu cliente.</h2>
+      <p style="margin-top:16px;color:var(--muted)">Abra um chat de exemplo criado por nós e converse como se fosse um cliente seu. Em poucos minutos você entende como é a experiência.</p>
+      <a class="btn" href="https://chatflow.pontoagio.com.br/chat/37HGLSGxipfJ0MSLAII5aLbPI7yXynDHzwpQY3Z3dmZsrNvmFT2y3buVJTGdABjiXw96wjPxOQADkEvJBucak0PPkHjC27hWYHpP" id="cta-exemplo" target="_blank" rel="noopener">Testar o chat de exemplo</a>
+    </div>
+  </section>
+
+  <!-- 9-12. OFERTA, GARANTIA, URGÊNCIA -->
+  <section class="offer" id="oferta">
+    <div class="wrap">
+      <div class="card">
+        <div>
+          <h2>Teste 7 dias grátis.</h2>
+          <div class="price-big" style="margin-top:20px">R$ 49,90<small>por mês, depois do teste</small></div>
+        </div>
+        <div>
+          <ul>
+            <li>Prompt pra criar seu fluxo em qualquer IA</li>
+            <li>Link do seu chatbot</li>
+            <li>Triagem com as perguntas que você escolher</li>
+            <li>Envio do cliente direto pro WhatsApp</li>
+            <li>7 dias grátis pra testar de verdade</li>
+          </ul>
+          <a class="btn" href="https://buy.stripe.com/14A3cw7w9gbLab07RW93y00" id="cta-oferta">Comece agora</a>
+          <p class="micro">Gostou? Continue por R$ 49,90/mês. Não gostou? Cancele quando quiser.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. FAQ -->
+  <section>
+    <div class="wrap" style="max-width:780px">
+      <h2 style="margin-bottom:24px">Dúvidas comuns</h2>
+      <details><summary>Preciso pagar pra testar?</summary><p>Não. Os 7 primeiros dias são grátis. Depois, a assinatura é de R$ 49,90 por mês.</p></details>
+      <details><summary>É difícil de configurar?</summary><p>Você não precisa programar. Copie nosso prompt, cole em qualquer IA e converse sobre o seu negócio. Ela cria o fluxo e entrega um JSON. Você cola esse JSON na configuração do Chatflow.</p></details>
+      <details><summary>Serve pro meu negócio?</summary><p>Se seus clientes chamam você no WhatsApp, sim. O Chatflow organiza esse primeiro contato.</p></details>
+      <details><summary>E se eu não gostar?</summary><p>Cancele durante o teste e você não paga nada.</p></details>
+      <details><summary>Quanto tempo preciso dedicar?</summary><p>Só o tempo de conversar com a IA e colar o JSON. Depois o chatbot trabalha por você.</p></details>
+    </div>
+  </section>
+
+  <!-- 14. CTA FINAL -->
+  <section class="final">
+    <div class="wrap">
+      <h2>Seu WhatsApp, só com cliente que quer conversar.</h2>
+      <p style="margin-top:16px;color:var(--muted)">Crie seu link hoje e veja a diferença em 7 dias.</p>
+      <a class="btn" href="https://buy.stripe.com/14A3cw7w9gbLab07RW93y00" id="cta-final">Comece agora</a>
       <p class="micro">7 dias grátis. Depois, R$ 49,90 por mês.</p>
     </div>
-    <div class="phone" aria-label="Exemplo de conversa com o Chatflow">
-      <div class="screen">
-        <header>
-          <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><path fill="#0B5FFF" d="M14 6h36a10 10 0 0 1 10 10v24a10 10 0 0 1-10 10H28L16 60l2-10.4A10 10 0 0 1 4 40V16A10 10 0 0 1 14 6z"/><circle cx="23" cy="25" r="4" fill="#fff"/><circle cx="41" cy="25" r="4" fill="#fff"/><path d="M22 35c6 6 14 6 20 0" stroke="#fff" stroke-width="4.5" stroke-linecap="round" fill="none"/></svg>
-          <div>Chatflow<small><span class="dot"></span>Online</small></div>
-        </header>
-        <div class="msg bot">Olá! 👋 Como posso ajudar você hoje?</div>
-        <div class="msg me">Quero saber mais sobre o serviço.</div>
-        <div class="msg bot">Ótimo! Qual é o seu interesse?
-          <div class="chips" style="margin-top:8px"><span class="chip">Orçamento</span><span class="chip">Dúvidas</span><span class="chip">Agendar</span></div>
-        </div>
-        <div class="msg me">Orçamento</div>
-        <div class="msg bot wa">Perfeito! Te levando pro WhatsApp agora…</div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+  </main>
 
-<!-- 5. DOR -->
-<section class="pain">
+  <!-- 15. PS -->
   <div class="wrap">
-    <h2>Você já passou por isso?</h2>
-    <ul>
-      <li>Abriu o WhatsApp e tinha uma fila de “quanto custa?”.</li>
-      <li>Respondeu a mesma pergunta pela quinta vez no dia.</li>
-      <li>Demorou pra responder e o cliente sumiu.</li>
-      <li>Perdeu tempo com quem só estava curioso.</li>
-    </ul>
+    <div class="ps"><strong>P.S.</strong> O Chatflow cria o link, faz a triagem e manda o cliente pro seu WhatsApp. Você testa 7 dias sem pagar nada. <a href="#oferta"><strong>Comece agora.</strong></a></div>
+    <footer class="legal">© Chatflow. Todos os direitos reservados. <a href="https://chatflow.pontoagio.com.br/chat/4RnYpHJjJ9awmNlylcqGzaVFmX2RSuaLIKayjKE6fYSjw4epHTslCSC6iCYij5GSOIZ9Z3eGCWsLFziIk7gUN6tJlyPWxv0Qz580" target="_blank" rel="noopener">Falar com o suporte</a></footer>
   </div>
-</section>
 
-<!-- 6. SOLUÇÃO -->
-<section>
-  <div class="wrap">
-    <h2>Um link. Uma conversa. Um cliente pronto.</h2>
-    <p style="margin-top:16px;color:var(--muted)">O Chatflow conversa primeiro. Você só entra quando o cliente já disse o que quer.</p>
-    <div class="steps">
-      <div class="step"><h3>Você cria o fluxo conversando</h3><p>Copie nosso prompt, cole em qualquer IA e converse normalmente. Ela devolve um JSON. Cole na configuração e pronto: seu link está no ar.</p></div>
-      <div class="step"><h3>O chatbot faz a triagem</h3><p>Ele pergunta o que o cliente precisa e organiza as respostas.</p></div>
-      <div class="step"><h3>O cliente cai no WhatsApp</h3><p>Você recebe a conversa já com contexto. Sem repetir pergunta.</p></div>
-    </div>
-  </div>
-</section>
-
-<!-- 7. BENEFÍCIOS -->
-<section class="benefits">
-  <div class="wrap">
-    <h2>O que muda no seu dia</h2>
-    <ul>
-      <li><strong>Menos mensagem repetida</strong><span>O chatbot responde o básico pra você focar no que importa.</span></li>
-      <li><strong>Atendimento sem espera</strong><span>O cliente começa a ser atendido na hora, a qualquer horário.</span></li>
-      <li><strong>Conversa com contexto</strong><span>Você já sabe o que a pessoa quer antes de dizer “oi”.</span></li>
-      <li><strong>Fluxo criado por conversa</strong><span>Nada de programar. Você conversa com uma IA e ela monta o fluxo pra você.</span></li>
-      <li><strong>Um link pra tudo</strong><span>Coloque na bio, no site, no anúncio ou no cartão.</span></li>
-      <li><strong>Começo sem risco</strong><span>Teste 7 dias grátis e veja funcionando no seu negócio.</span></li>
-    </ul>
-  </div>
-</section>
-
-<!-- EXEMPLO -->
-<section style="padding-top:0">
-  <div class="wrap" style="max-width:780px">
-    <h2>Veja pelos olhos do seu cliente.</h2>
-    <p style="margin-top:16px;color:var(--muted)">Abra um chat de exemplo criado por nós e converse como se fosse um cliente seu. Em poucos minutos você entende como é a experiência.</p>
-    <a class="btn" href="https://chatflow.pontoagio.com.br/chat/37HGLSGxipfJ0MSLAII5aLbPI7yXynDHzwpQY3Z3dmZsrNvmFT2y3buVJTGdABjiXw96wjPxOQADkEvJBucak0PPkHjC27hWYHpP" id="cta-exemplo" target="_blank" rel="noopener">Testar o chat de exemplo</a>
-  </div>
-</section>
-
-<!-- 9-12. OFERTA, GARANTIA, URGÊNCIA -->
-<section class="offer" id="oferta">
-  <div class="wrap">
-    <div class="card">
-      <div>
-        <h2>Teste 7 dias grátis.</h2>
-        <div class="price-big" style="margin-top:20px">R$ 49,90<small>por mês, depois do teste</small></div>
-      </div>
-      <div>
-        <ul>
-          <li>Prompt pra criar seu fluxo em qualquer IA</li>
-          <li>Link do seu chatbot</li>
-          <li>Triagem com as perguntas que você escolher</li>
-          <li>Envio do cliente direto pro WhatsApp</li>
-          <li>7 dias grátis pra testar de verdade</li>
-        </ul>
-        <a class="btn" href="https://buy.stripe.com/14A3cw7w9gbLab07RW93y00" id="cta-oferta">Comece agora</a>
-        <p class="micro">Gostou? Continue por R$ 49,90/mês. Não gostou? Cancele quando quiser.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 13. FAQ -->
-<section>
-  <div class="wrap" style="max-width:780px">
-    <h2 style="margin-bottom:24px">Dúvidas comuns</h2>
-    <details><summary>Preciso pagar pra testar?</summary><p>Não. Os 7 primeiros dias são grátis. Depois, a assinatura é de R$ 49,90 por mês.</p></details>
-    <details><summary>É difícil de configurar?</summary><p>Você não precisa programar. Copie nosso prompt, cole em qualquer IA e converse sobre o seu negócio. Ela cria o fluxo e entrega um JSON. Você cola esse JSON na configuração do Chatflow.</p></details>
-    <details><summary>Serve pro meu negócio?</summary><p>Se seus clientes chamam você no WhatsApp, sim. O Chatflow organiza esse primeiro contato.</p></details>
-    <details><summary>E se eu não gostar?</summary><p>Cancele durante o teste e você não paga nada.</p></details>
-    <details><summary>Quanto tempo preciso dedicar?</summary><p>Só o tempo de conversar com a IA e colar o JSON. Depois o chatbot trabalha por você.</p></details>
-  </div>
-</section>
-
-<!-- 14. CTA FINAL -->
-<section class="final">
-  <div class="wrap">
-    <h2>Seu WhatsApp, só com cliente que quer conversar.</h2>
-    <p style="margin-top:16px;color:var(--muted)">Crie seu link hoje e veja a diferença em 7 dias.</p>
-    <a class="btn" href="https://buy.stripe.com/14A3cw7w9gbLab07RW93y00" id="cta-final">Comece agora</a>
-    <p class="micro">7 dias grátis. Depois, R$ 49,90 por mês.</p>
-  </div>
-</section>
-</main>
-
-<!-- 15. PS -->
-<div class="wrap">
-  <div class="ps"><strong>P.S.</strong> O Chatflow cria o link, faz a triagem e manda o cliente pro seu WhatsApp. Você testa 7 dias sem pagar nada. <a href="#oferta"><strong>Comece agora.</strong></a></div>
-  <footer class="legal">© Chatflow. Todos os direitos reservados. <a href="https://chatflow.pontoagio.com.br/chat/4RnYpHJjJ9awmNlylcqGzaVFmX2RSuaLIKayjKE6fYSjw4epHTslCSC6iCYij5GSOIZ9Z3eGCWsLFziIk7gUN6tJlyPWxv0Qz580" target="_blank" rel="noopener">Falar com o suporte</a></footer>
-</div>
-
-<script>
-(function(){
-  var msgs=document.querySelectorAll('.msg');
-  var still=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  msgs.forEach(function(m,i){
-    if(still){m.classList.add('show');return}
-    setTimeout(function(){m.classList.add('show')},700+i*1300);
-  });
-})();
-</script>
-<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"40479bd3422b484a9d918088e11dc7e2","r":1,"spa":2}' crossorigin="anonymous"></script>
-</body>
-</html>
+  <script>
+  (function(){
+    var msgs=document.querySelectorAll('.msg');
+    var still=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    msgs.forEach(function(m,i){
+      if(still){m.classList.add('show');return}
+      setTimeout(function(){m.classList.add('show')},700+i*1300);
+    });
+  })();
+  </script>
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"40479bd3422b484a9d918088e11dc7e2","r":1,"spa":2}' crossorigin="anonymous"></script>
+  </body>
+  </html>
